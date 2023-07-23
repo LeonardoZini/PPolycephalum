@@ -354,11 +354,12 @@ to create_maze_1
     ]
   ]
   if maze = "maze2"[
-    ask patches with [pxcor < -12 and pycor = -15 and pxcor > -25][
+    ask patches with [pxcor < -2 and pycor = -15 and pxcor > -25][
       set wall 1
       set pcolor blue
     ]
   ]
+
 
 
 
@@ -611,7 +612,7 @@ ttl-choice
 ttl-choice
 10
 300
-220.0
+200.0
 10
 1
 NIL
@@ -658,7 +659,7 @@ food-boost
 food-boost
 0
 100
-43.0
+25.0
 1
 1
 %
@@ -672,7 +673,7 @@ CHOOSER
 maze
 maze
 "maze1" "maze2" "maze3"
-1
+0
 
 SLIDER
 12
@@ -712,7 +713,7 @@ INPUTBOX
 1043
 189
 px_f
-354.0
+33.0
 1
 0
 Number
@@ -742,8 +743,8 @@ sum [carrying-signal] of cytoplasms
 PLOT
 649
 62
-913
-272
+947
+275
 Plot
 NIL
 NIL
@@ -766,7 +767,7 @@ CHOOSER
 chem-grad?
 chem-grad?
 "yes" "no" "velocity"
-1
+0
 
 PLOT
 649
